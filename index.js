@@ -132,7 +132,7 @@ function drawTicks() {
 
 function drawTickInnerCircle() {
     context.save();
-    context.beginPath();
+    //context.beginPath();
     context.strokeStyle = 'rbga(0,0,0,0.1)';
     context.arc(
         circle.x, circle.y,
@@ -168,7 +168,7 @@ function drawRingOuterCircle() {
         circle.x, 
         circle.y, 
         circle.radius + RING_OUTER_RADIUS,
-        0, Math.PI*2, false
+        0, Math.PI*2, true
     );
     context.fillStyle = 'rgba(100,140,230,0.1)';
     context.fill();
